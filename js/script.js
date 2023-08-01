@@ -95,12 +95,12 @@ alert(error);
 };
 //below is the arcCosine(cosine inverse)function
 const arcCosine=(number)=>{
-try{
-const input=document.querySelector("input");
-number= input.value;
-if(number>=-1 && number<=1){
- const angleInRadians =Math.acos(number);
- input.value=((angleInRadians*180)/Math.PI).toFixed(2) ;
+ try{
+  const input=document.querySelector("input");
+   number= input.value;
+    if(number>=-1 && number<=1){
+      const angleInRadians =Math.acos(number);
+         input.value=((angleInRadians*180)/Math.PI).toFixed(2) ;
 
    }
    else{
@@ -129,20 +129,20 @@ const arcTan=(number)=>{
     };
 
 const squareRoot=(num)=>{
-try{const input=document.querySelector("input")
-num =input.value;
-const sqrt= Math.sqrt(num);
-input.value=sqrt;
+ try{const input=document.querySelector("input")
+  num =input.value;
+   const sqrt= Math.sqrt(num);
+    input.value=sqrt;
 }
-catch(err){
-alert(err);
-}
+ catch(err){
+  alert(err);
+ }
 }
 const del=(str)=>{
-const input= document.querySelector("input");
-str= input.value;
-const DEL=str.substring(0,str.length-1 );
-input.value= DEL;
+ const input= document.querySelector("input");
+  str= input.value;
+   const DEL=str.substring(0,str.length-1 );
+    input.value= DEL;
 
 }
 
